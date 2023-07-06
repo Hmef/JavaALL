@@ -15,7 +15,6 @@ public class Task implements Runnable{
 	public void run() {
 		// TODO Auto-generated method stub
 		try {
-			//LOG.info
 			System.out.println(Thread.currentThread().getName() + " is waiting");
 			barrier.await();
 			System.out.println(Thread.currentThread().getName() + "is released");
